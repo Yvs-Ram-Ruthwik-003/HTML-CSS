@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>YouTube Clone</title>
+
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <style>
+            p{
+                font-family: 'Roboto', Arial;
+                margin: 0;
+            }
+            .thumbnail{
+                width: 300px;
+                height: auto;
+                display: block;
+            }
+            .search-bar {
+                display: block;
+            }
+            .video-preview{
+                width: 300px;
+                display: inline-block;      /* when we are using inline-block, there is a problem of extra space between the elements and they are not vertically aligned  ---> use css Gird to resolve this */
+                vertical-align: top;
+                margin-right: 10px;
+            }
+            .video-info{
+                padding: 10px;
+                display: inline-block;
+                width: 200px;
+            }
+
+            .video-title{
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            
+            .video-views, .video-channel{
+                font-size: 12px;
+                color: rgb(96, 96, 96);
+            }
+            .channel-icon{
+                display: inline-block;
+                width: 40px;
+                vertical-align: top;
+            }
+            .channel-picture{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <input class="search-bar" type="text" placeholder="Search">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/Joy_Boy.jpg">
+            </div>
+            <div>
+                <div class="channel-icon">
+                    <img class="channel-picture" src="channel/Ichigo_Kurosaki_(Bankai_Shadow)_Wallpaper_Inner_Hollow_Awakens.jpg">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">
+                        Joy Boy - Monkey.D.Luffy
+                    </p>
+                    <p class="video-channel">
+                         One Piece
+                    </p>
+                    <p class="video-views">
+                        1.2M views &#183; 2 days ago   
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
